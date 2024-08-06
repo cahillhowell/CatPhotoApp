@@ -1,5 +1,59 @@
-<html>
+<html> <!-- (2) -->
   <body>
-    <h1>CatPhotoApp</h1>
+    <main> <!-- 3 -->
+      <h1>CatPhotoApp</h1>
+      <section> <!-- 9 -->
+        <h2>Cat Photos</h2>
+          <!-- (1) TODO: Add link to cat photos /// A good way to remind yourself and thoughts throughout working the code -->
+          <p>See more <a href="https://www.reddit.com/r/catpictures/" target="_blank">cat photos</a> in our gallery.</p> <!-- 4 7 8 -->
+            <a href="https://www.reddit.com/r/catpictures/" target="_blank">
+            <img src="C:\Users\Khill\Documents\Atom Projects\CatPhotoApp\relaxing-cat.jpg" alt="A cute orange cat lying on its back"> <!-- 5 & 6 8 -->
+            </a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+          <h3>Things cats love:</h3>
+            <ul> <!-- 10 -->
+              <li>cat nip</li> <!-- 10 -->
+              <li>laser pointers</li>
+              <li>lasagna</li>
+            </ul>
+          <figure> <!-- 11 -->
+            <img src="C:\Users\Khill\Documents\Atom Projects\CatPhotoApp\Lasagna-Recipe-f.jpg" alt="photo of lasagna">
+            <figcaption>Cats <em>love</em> lasagna.</figcaption> <!-- 12 -->
+          </figure>
+          <h3>Top 3 things cats hate:</h3>
+            <ol> <!-- 13 -->
+              <li>flea treatment</li>
+              <li>thunder</li>
+              <li>other cats</li>
+            </ol>
+          <figure>
+            <img src="C:\Users\Khill\Documents\Atom Projects\CatPhotoApp\cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption> <!-- 14 -->
+          </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+          <form action="C:\Users\Khill\Documents\Atom Projects\CatPhotoApp\catphotos\submissions.txt"><!-- 15 -->
+            <fieldset>
+              <legend>Is your cat an indoor or outdoor cat?</legend>
+              <label><input checked id="indoor" type="radio" name="indoor-outdoor" value="indoor">Indoor</label>
+              <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
+            </fieldset>
+            <fieldset>
+              <legend>What's your cat's personality?</legend>
+              <input checked id="loving" type="checkbox" name="personality" value="loving"> <label for="loving">Loving</label>
+              <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+              <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+            </fieldset>
+            <input required type="text" name="submissions" placeholder="name submissions"> <!-- 16 17 18 -->
+            <button type="submit">Submit</button> <!-- 19 -->
+          </form>
+      </section>
+    </main>
+   <footer>
+    <p>Mock site made by <a href="https://github.com/cahillhowell" target="_blank">Cahill Howell</a> - v1.0.0</p>
+   </footer>
   </body>
 </html>
